@@ -1,0 +1,120 @@
+body {
+    min-width: 960px;
+    background-color: #000;
+    color: #FFF;
+}
+
+/* head */
+header {
+    position: fixed; z-index:9999;
+    top: 20px; left: 0;
+    width: 90%; height: 50px;
+    padding: 10px 5%;
+    overflow: hidden;
+}
+
+header h1 {
+    float:left;
+}
+header nav {
+    float:right;
+}
+
+header nav ul {
+    overflow: hidden;
+}
+
+header nav ul li {
+    float:left;
+    margin-left:10px;
+}
+
+.submenu {
+    display: none;
+}
+
+section {
+    overflow: hidden;
+}
+
+/* section01 */
+#section01{
+    position: relative;
+    width: 100%; min-height: 800px;
+    padding-top:100px;
+    text-align:center;
+}
+
+#section01 .sbox > div > p {
+    font-size:8em;
+}
+
+#section01 .sbox > div  > p:first-child {
+    font-size:0.9em;
+    margin-bottom:50px;
+    text-align:center;
+}
+
+#section01 .sbox > div > p:nth-child(2) {
+    margin-left:-300px
+}
+
+#section01 .sbox > div > p:nth-child(3) {
+    margin-left:300px;
+}
+
+#section01 .sbox > div > p:nth-child(4) {
+    font-weight:bolder;
+    margin-bottom:30px;
+}
+
+#section01 .sbox > div > p:last-child {
+    margin-bottom:400px;
+    color: #aaa;
+    font-size: 0.825em;
+}
+
+#section01 .imgbox01 {
+    position:absolute; z-index:10;
+    left:50%; bottom:0px;
+    margin-left:-272px; margin-bottom:50px;
+}
+
+#section01 .slidetext01 {
+
+    position: absolute; bottom:180px; z-index:5;
+    display:flex; width:200%;
+    color:chartreuse;
+    line-height:28px;
+    text-align:left;
+    justify-content: space-between;
+    animation: text01 35s infinite linear;
+}
+
+#section01 .slidetext01 span {
+    padding:5px 10px;
+    line-height:20px; 
+    border:1px solid chartreuse; border-radius:20px;
+}
+
+/* section02 */
+#section02{
+    width: 100%; min-height: 800px;
+    background:url("../images/main/02_bg.png") no-repeat 100%;
+}
+
+
+
+/* animation */
+@keyframes text01{
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+
+@media (max-width: 960px) {
+    * {
+        font-size:12px
+    }
+}
